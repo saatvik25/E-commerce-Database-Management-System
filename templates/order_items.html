@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Order Items</title>
+</head>
+<body>
+    <h1>Order Items</h1>
+    <form action="/order_items" method="POST">
+        <label for="order_id">Order ID:</label>
+        <input type="text" id="order_id" name="order_id"><br><br>
+        <label for="product_id">Product ID:</label>
+        <input type="text" id="product_id" name="product_id"><br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity"><br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price"><br><br>
+        <input type="submit" value="Add Order Item">
+
+        {% if message %}
+    <div class="success-message">{{ message }}</div>
+{% endif %}
+    </form>
+</body>
+</html>

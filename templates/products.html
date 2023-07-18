@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        {% for product in products %}
+        <li>{{ product[1] }} - Price: {{ product[4] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <form action="/products" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price"><br><br>
+        <label for="inventory">Inventory:</label>
+        <input type="text" id="inventory" name="inventory"><br><br>
+        <input type="submit" value="Add Product">
+        {% if message %}
+    <div class="success-message">{{ message }}</div>
+{% endif %}
+    </form>
+
+    
+</body>
+</html>

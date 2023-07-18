@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Orders</title>
+</head>
+<body>
+    <h1>Orders</h1>
+    <form action="/orders" method="POST">
+        <label for="customer_id">Customer ID:</label>
+        <input type="text" id="customer_id" name="customer_id"><br><br>
+        <label for="order_date">Order Date:</label>
+        <input type="text" id="order_date" name="order_date"><br><br>
+        <label for="total_amount">Total Amount:</label>
+        <input type="text" id="total_amount" name="total_amount"><br><br>
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
