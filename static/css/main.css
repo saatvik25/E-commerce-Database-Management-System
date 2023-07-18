@@ -1,0 +1,89 @@
+/* index.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.index{
+  margin-left: 26%;
+  width: 48%;
+  /* border: 3px solid #73AD21; */
+  padding: 10px;
+  margin-top: 6%;
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: #45a049;
+}
+
+/* products.css */
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* orders.css */
+
+/* Similar to products.css, you can define custom styles for the orders.html page */
+
+/* customers.css */
+
+/* Similar to products.css, you can define custom styles for the customers.html page */
+
+/* order_items.css */
+
+/* Similar to products.css, you can define custom styles for the order_items.html page */
